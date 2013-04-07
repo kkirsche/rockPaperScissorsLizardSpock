@@ -9,6 +9,12 @@ body {
 img {
     max-width: 100%;
 }
+a {
+    color: #f9a228;
+}
+a:hover {
+    color: #C48327;
+}
 .hero-unit {
     background-color: #00518A;
     border: 1px solid #00406E;
