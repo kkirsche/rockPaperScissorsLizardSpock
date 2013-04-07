@@ -54,6 +54,44 @@
                 <p><a class="btn btn-primary btn-large" id="playNow">Play now! &raquo;</a></p>
             </div>
 
+            <!-- Ask User's Choice -->
+            <div id="askUserChoice" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="askUserChoice" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="askUserChoiceLabel">Rock, Paper, Scissors, Lizard, Spock?</h3>
+              </div>
+              <div class="modal-body">
+                <form>
+                        <label>Please select your choice below.</label>
+                        <select name="userGameChoice" id="userGameChoice" class="span4">
+                            <option value="Rock">Rock</option>
+                            <option value="Paper">Paper</option>
+                            <option value="Scissors">Scissors</option>
+                            <option value="Lizard">Lizard</option>
+                            <option value="Spock">Spock</option>
+                        </select>
+                    </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button class="btn btn-primary" id="beginGame">Play</button>
+              </div>
+            </div>
+
+            <!-- Show Result -->
+            <div id="showResult" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="showResult" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="showResultLabel"></h3>
+              </div>
+              <div class="modal-body">
+                <p id="theResult"></p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+            </div>
+
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span4">
@@ -113,6 +151,18 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        <script>
+            $('#askUserChoice').modal({
+                backdrop: true,
+                keyboard: true,
+                show: false
+            });
+            $("#showResult").modal({
+                backdrop: true,
+                keyboard: true,
+                show: false
+            });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

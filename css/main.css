@@ -10,4 +10,9 @@ body {
     background-color: #00518A;
     border: 1px solid #00406E;
 }
-
+#askUserChoiceLabel {
+    color:#464633;
+}
+#showResult {
+    color:#464633;
+}
