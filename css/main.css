@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background-image: url("http://n2.9cloud.us/636/rock_paper_scissors_lizard_spock_1159050479.jpg");
+    color: #fff;
+}
+.hero-unit {
+    background-color: #00518A;
+    border: 1px solid #00406E;
+}
+
