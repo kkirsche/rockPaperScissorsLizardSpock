@@ -19,62 +19,87 @@ $(document).ready(function() {
         if (userChoice === "Rock") {
             if (computerChoice === "Paper") {
                 result = "Sorry, you lose. Paper covers Rock.";
+                $('div#resultImage img').attr('src', 'img/results/PaperCoversRock.png');
             } else if (computerChoice === "Lizard") {
                 result = "You win! Rock crushes Lizard.";
+                $('div#resultImage img').attr('src', 'img/results/RockCrushesLizard.png');
             } else if (computerChoice === "Scissors") {
                 result = "You win! Rock crushes Scissors.";
+                $('div#resultImage img').attr('src', 'img/results/RockCrushesScissors.png');
             } else if (computerChoice === "Spock") {
                 result = "Sorry, you lose. Spock vaporizes Rock.";
+                $('div#resultImage img').attr('src', 'img/results/SpockVaporizesRock.png');
             } else if (computerChoice === "Rock") {
                 result = "Tie!";
+                $('div#resultImage img').attr('src', 'img/results/RockTiesRock.png');
             }
         } else if (userChoice === "Paper") {
             if (computerChoice === "Rock") {
                 result = "You win! Paper covers Rock.";
+                $('div#resultImage img').attr('src', 'img/results/PaperCoversRock.png');
             } else if (computerChoice === "Spock") {
                 result = "You win! Paper disproves Spock.";
+                $('div#resultImage img').attr('src', 'img/results/PaperDisprovesSpock.png');
             } else if (computerChoice === "Lizard") {
                 result = "Sorry, you lose. Lizard eats Paper.";
+                $('div#resultImage img').attr('src', 'img/results/LizardEatsPaper.png');
             } else if (computerChoice === "Scissors") {
-                result = "Sorry, you lose. Scissors cut Paper.";
+                result = "Sorry, you lose. Scissors cuts Paper.";
+                $('div#resultImage img').attr('src', 'img/results/ScissorsCutPaper.png');
             } else if (computerChoice === "Paper") {
                 result = "Tie!";
+                $('div#resultImage img').attr('src', 'img/results/PaperTiesPaper.png');
             }
         } else if (userChoice === "Scissors") {
             if (computerChoice === "Spock") {
                 result = "Sorry, you lose. Spock smashes Scissors.";
+                $('div#resultImage img').attr('src', 'img/results/SpockSmashesScissors.png');
             } else if (computerChoice === "Paper") {
                 result = "You win! Scissors cuts Paper.";
+                $('div#resultImage img').attr('src', 'img/results/ScissorsCutPaper.png');
             } else if (computerChoice === "Rock") {
                 result = "Sorry, you lose. Rock crushes Scissors.";
+                $('div#resultImage img').attr('src', 'img/results/RockCrushesScissors.png');
             } else if (computerChoice === "Lizard") {
                 result = "You win! Scissors decapitates Lizard.";
+                $('div#resultImage img').attr('src', 'img/results/ScissorsDecapitateLizard.png');
             } else if (computerChoice === "Scissors") {
                 result = "Tie!";
+                $('div#resultImage img').attr('src', 'img/results/ScissorsTiesScissors.png');
             }
         } else if (userChoice === "Lizard") {
             if (computerChoice === "Spock") {
                 result = "You win! Lizard poisons Spock.";
+                $('div#resultImage img').attr('src', 'img/results/LizardPoisonsSpock.png');
             } else if (computerChoice === "Paper") {
                 result = "You win! Lizard eats Paper.";
+                $('div#resultImage img').attr('src', 'img/results/LizardEatsPaper.png');
             } else if (computerChoice === "Rock") {
                 result = "Sorry, you lose. Rock crushes Lizard.";
+                $('div#resultImage img').attr('src', 'img/results/RockCrushesLizard.png');
             } else if (computerChoice === "Scissors") {
                 result = "Sorry, you lose. Scissors decapitates Lizard.";
+                $('div#resultImage img').attr('src', 'img/results/ScissorsDecapitateLizard.png');
             } else if (computerChoice === "Lizard") {
                 result = "Tie!";
+                $('div#resultImage img').attr('src', 'img/results/LizardTiesLizard.png');
             }
         } else if (userChoice === "Spock") {
             if (computerChoice === "Scissors") {
                 result = "You win! Spock smashes Scissors.";
+                $('div#resultImage img').attr('src', 'img/results/SpockSmashesScissors.png');
             } else if (computerChoice === "Rock") {
                 result = "You win! Spock vaporizes Rock.";
+                $('div#resultImage img').attr('src', 'img/results/SpockVaporizesRock.png');
             } else if (computerChoice === "Paper") {
                 result = "Sorry, you lose. Paper disproves Spock.";
+                $('div#resultImage img').attr('src', 'img/results/PaperDisprovesSpock.png');
             } else if (computerChoice === "Lizard") {
                 result = "Sorry, you lose. Lizard poisons Spock.";
+                $('div#resultImage img').attr('src', 'img/results/LizardPoisonsSpock.png');
             } else if (computerChoice === "Spock") {
                 result = "Tie!";
+                $('div#resultImage img').attr('src', 'img/results/SpockTiesSpock.png');
             }
         } else {
             result = "Incorrect input.";

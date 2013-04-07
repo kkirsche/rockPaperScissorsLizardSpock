@@ -3,8 +3,11 @@
    ========================================================================== */
 
 body {
-    background-image: url("http://kkirsche.github.io/rockPaperScissorsLizardSpock/img/rock_paper_scissors_lizard_spock.jpg");
+    background-color: #0169b2;
     color: #fff;
+}
+img {
+    max-width: 100%;
 }
 .hero-unit {
     background-color: #00518A;
