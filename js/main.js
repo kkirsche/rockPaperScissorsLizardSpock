@@ -109,18 +109,22 @@ $("document").ready(function() {
 
         return choice;
     }
-
-    userChoice = prompt("Rock, Paper, Scissors, Lizard, or Spock?");
-
-    computerChoice = createComputerChoice();
-
-    outCome = compareUserChoiceAndComputerChoice(userChoice, computerChoice);
-
-    while (outCome === "Incorrect input.") {
-        userChoice = prompt("Please enter a correct input. Rock, Paper, Scissors, Lizard, or Spock?");
-        computerChoice = createComputerChoice();
-        outCome = compareUserChoiceAndComputerChoice(userChoice, computerChoice);
+    function updateResults(userChoice, computerChoice) {
+        $("#userChoice").val(userChoice);
+        $("#computerChoice").val(computerChoice);
     }
 
-    alert(outCome);
+    $("#playNow").click(function() {
+        userChoice = prompt("Rock, Paper, Scissors, Lizard, or Spock?");
+        computerChoice = createComputerChoice();
+        outCome = compareUserChoiceAndComputerChoice(userChoice, computerChoice);
+
+        while (outCome === "Incorrect input.") {
+            userChoice = prompt("Please enter a correct input. Rock, Paper, Scissors, Lizard, or Spock?");
+            computerChoice = createComputerChoice();
+            outCome = compareUserChoiceAndComputerChoice(userChoice, computerChoice);
+        }
+        updateResults(userChoice, computerChoice);
+        alert(outCome);
+    })
 });
