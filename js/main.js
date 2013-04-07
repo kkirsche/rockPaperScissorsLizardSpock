@@ -115,7 +115,7 @@ $("document").ready(function() {
     }
 
     $("#playNow").click(function() {
-        $("#askUserChoice").modal('toggle');
+        $("#askUserChoice").modal('show');
 
         $("#beginGame").click(function() {
             userChoice = $("#userGameChoice").val();
@@ -128,11 +128,11 @@ $("document").ready(function() {
                 outCome = compareUserChoiceAndComputerChoice(userChoice, computerChoice);
             }
             updateResults(userChoice, computerChoice);
-            $("#askUserChoice").modal('toggle');
+            $("#askUserChoice").modal('hide');
 
             $("#showResultLabel").text(outCome);
             $("#theResult").text(outCome);
-            $("#showResult").modal('toggle');
+            $("#showResult").modal('show');
         });
     })
 });
