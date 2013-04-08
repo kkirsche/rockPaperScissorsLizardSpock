@@ -2,7 +2,7 @@ Rock Paper Scissors Lizard Spock
 ================================
 <hr />
 ##[Play Now](http://kkirsche.github.io/rockPaperScissorsLizardSpock/)
-![Rock Paper Scissors Lizard Spock](http://kkirsche.github.io/rockPaperScissorsLizardSpock/img/rockPaperScissorsLizardSpock-example.jpg)
+![Rock Paper Scissors Lizard Spock](http://kkirsche.github.io/rockPaperScissorsLizardSpock/img/begin.png)
 
 ##History
 
